@@ -1,0 +1,11 @@
+# script-src / style-src are intentionally NOT set here — SvelteKit computes and delivers
+# those via a <meta http-equiv="Content-Security-Policy"> tag in the built HTML (see the
+# `csp` option in vite.config.ts), with a fresh, auto-computed hash for its own inline
+# hydration bootstrap script on every build. Duplicating those directives here (especially
+# under a `default-src` fallback) would intersect with that policy and could block the
+# app's own bootstrap script if the hash ever drifted out of sync.
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Content-Security-Policy: frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'; img-src 'self' data:; font-src 'self'; connect-src 'self'
