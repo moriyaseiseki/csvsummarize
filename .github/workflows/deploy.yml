@@ -55,11 +55,13 @@ jobs:
       # variable (Settings > Secrets and variables > Actions — Secrets and
       # Variables tabs respectively), matching an existing Cloudflare Pages
       # project.
+      #
+      # cloudflare/pages-action was retired by Cloudflare; Pages deploys now
+      # go through wrangler-action running `wrangler pages deploy` directly.
       - name: Deploy to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
+        uses: cloudflare/wrangler-action@v4
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: ${{ vars.CLOUDFLARE_PROJECT_NAME }}
-          directory: build
+          command: pages deploy build --project-name=${{ vars.CLOUDFLARE_PROJECT_NAME }}
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
