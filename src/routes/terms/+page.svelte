@@ -4,7 +4,7 @@
 -->
 <div class="prose prose-sm dark:prose-invert max-w-none py-2 pb-8">
 	<h1>Terms of Service</h1>
-	<p class="text-xs text-muted-foreground">Last updated: September 10, 2026</p>
+	<p class="text-xs text-muted-foreground">Last updated: October 1, 2026</p>
 
 	<h2>1. Acceptance of Terms</h2>
 	<p>
