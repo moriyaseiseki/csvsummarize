@@ -1,3 +1,7 @@
+<!--
+	This page's content (and the linked Privacy Policy) reflects this project's own
+	business identity and is not covered by the repository's MIT License — see NOTICE.
+-->
 <div class="prose prose-sm dark:prose-invert max-w-none py-2 pb-8">
 	<h1>Terms of Service</h1>
 	<p class="text-xs text-muted-foreground">Last updated: September 10, 2026</p>
@@ -55,7 +59,21 @@
 		about what data, if any, is collected when you use the Service.
 	</p>
 
-	<h2>8. Contact</h2>
+	<h2>8. Governing Law</h2>
+	<p>
+		These Terms are governed by, and construed in accordance with, the laws of Japan, without regard
+		to its conflict of laws principles. Any dispute arising out of or relating to these Terms or the
+		Service shall be subject to the exclusive jurisdiction of the courts of Japan.
+	</p>
+
+	<h2>9. Severability</h2>
+	<p>
+		If any provision of these Terms is found to be unenforceable or invalid under applicable law,
+		that provision will be limited or eliminated to the minimum extent necessary so that these Terms
+		will otherwise remain in full force and effect and enforceable.
+	</p>
+
+	<h2>10. Contact</h2>
 	<p>For questions regarding these Terms, please contact:</p>
 	<p>
 		<strong>Entity:</strong> MORIYA SEISEKI (杜屋整積)<br />
