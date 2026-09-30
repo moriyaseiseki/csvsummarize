@@ -51,13 +51,15 @@ jobs:
           path: build
 
       # Requires CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID to be set as
-      # repository secrets (Settings > Secrets and variables > Actions), and
-      # a Cloudflare Pages project already created with this exact name.
+      # repository secrets, and CLOUDFLARE_PROJECT_NAME as a repository
+      # variable (Settings > Secrets and variables > Actions — Secrets and
+      # Variables tabs respectively), matching an existing Cloudflare Pages
+      # project.
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: moriyaseiseki-app-dit-csvsummarize
+          projectName: ${{ vars.CLOUDFLARE_PROJECT_NAME }}
           directory: build
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
